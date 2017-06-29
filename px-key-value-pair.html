@@ -1,0 +1,33 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. tests, examples), we assume the server is started with
+    'gulp serve' (or similar server setup) to enable correct finding of bower dependencies for local runs.
+-->
+<link rel="import" href="../polymer/polymer.html"/>
+
+<link rel="import" href="css/px-key-value-pair-styles.html">
+
+<!--
+
+### Usage
+
+    <px-key-value-pair
+      key="Lorem Ipsum"
+      value="12345"
+      size="alpha">
+    </px-key-value-pair>
+
+@element px-key-value-pair
+@blurb The px-key-value-pair component allows you to prominently display information in a dashboard
+@homepage index.html
+@demo index.html
+-->
+
+<dom-module id="px-key-value-pair">
+  <template>
+    <style include="px-key-value-pair-styles"></style>
+    <div class="label">{{key}}</div>
+    <div class$="{{size}} {{size}}--margin">{{value}}</div>
+  </template>
+</dom-module>
+<script src="dist/px-key-value-pair.js"></script>

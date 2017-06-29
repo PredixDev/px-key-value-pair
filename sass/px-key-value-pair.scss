@@ -1,0 +1,62 @@
+/*
+ * Copyright (c) 2014 GE Global Research. All rights reserved.
+ *
+ * The copyright to the computer software herein is the property of
+ * GE Global Research. The software may be used and/or copied only
+ * with the written permission of GE Global Research or in accordance
+ * with the terms and conditions stipulated in the agreement/contract
+ * under which the software has been supplied.
+ */
+
+//
+// Sass for the for the px-key-value-pair component
+//
+// @author tali.marcus@ge.com
+//
+
+
+// Settings
+
+// Tools
+
+// Generic
+@import "px-normalize-design/_generic.normalize.scss";
+@import "px-box-sizing-design/_generic.box-sizing.scss";
+@import "px-helpers-design/_generic.helpers.scss";
+
+// Base
+@import "px-headings-design/_base.headings.scss";
+
+// Meta
+
+// Objects
+
+// Component
+.kvp-value {
+  color: var(--px-key-value-pair-value-color, black);
+}
+
+.alpha--margin {
+  margin-top: calculateRem(12px);
+}
+
+.beta--margin {
+  margin-top: calculateRem(10px);
+}
+
+.gamma--margin {
+  margin-top: calculateRem(9px);
+}
+
+.delta--margin {
+  margin-top: calculateRem(8px);
+}
+
+.epsilon--margin {
+  margin-top: calculateRem(7px);
+}
+.regular--margin {
+  margin-top: calculateRem(6px);
+}
+
+// Trumps
