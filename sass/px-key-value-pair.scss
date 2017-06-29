@@ -36,26 +36,26 @@
   color: var(--px-key-value-pair-value-color, black);
 }
 
-.alpha--margin {
+.kvp-margin--alpha {
   margin-top: calculateRem(12px);
 }
 
-.beta--margin {
+.kvp-margin--beta {
   margin-top: calculateRem(10px);
 }
 
-.gamma--margin {
+.kvp-margin--gamma {
   margin-top: calculateRem(9px);
 }
 
-.delta--margin {
+.kvp-margin--delta {
   margin-top: calculateRem(8px);
 }
 
-.epsilon--margin {
+.kvp-margin--epsilon {
   margin-top: calculateRem(7px);
 }
-.regular--margin {
+.kvp-margin--regular {
   margin-top: calculateRem(6px);
 }
 

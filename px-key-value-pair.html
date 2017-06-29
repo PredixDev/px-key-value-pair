@@ -5,8 +5,6 @@
 -->
 <link rel="import" href="../polymer/polymer.html"/>
 
-<link rel="import" href="css/px-key-value-pair-styles.html">
-
 <!--
 
 ### Usage
@@ -17,17 +15,62 @@
       size="alpha">
     </px-key-value-pair>
 
+### Styling
+The following custom properties are available for styling:
+
+Custom property | Description
+:----------------|:-------------
+`--px-key-value-pair-value-color` | Color of `value` text
+
 @element px-key-value-pair
 @blurb The px-key-value-pair component allows you to prominently display information in a dashboard
 @homepage index.html
 @demo index.html
 -->
 
+<link rel="import" href="css/px-key-value-pair-styles.html">
+
 <dom-module id="px-key-value-pair">
   <template>
     <style include="px-key-value-pair-styles"></style>
+
     <div class="label">{{key}}</div>
-    <div class$="{{size}} {{size}}--margin">{{value}}</div>
+    <div class$="{{size}} kvp-margin--{{size}}">{{value}}</div>
   </template>
 </dom-module>
-<script src="dist/px-key-value-pair.js"></script>
+
+<script>
+  Polymer({
+
+    is: 'px-key-value-pair',
+
+    properties: {
+      /**
+      * The key/label of the key-value pair
+      *
+      * @property key
+      */
+      key: {
+        type: String
+      },
+      /**
+      * The value of the key-value pair
+      *
+      * @property value
+      */
+      value: {
+        type: String
+      },
+      /**
+      * The display size of the key-value pair
+      *
+      * @property size
+      */
+      size: {
+        type: String
+      }
+    },
+
+
+  });
+</script>
