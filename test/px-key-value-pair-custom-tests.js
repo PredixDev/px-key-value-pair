@@ -11,11 +11,11 @@ function runCustomTests() {
       assert.isTrue(kvp !== undefined);
     });
     test('key-value pair key gets the correct classes', function() {
-      var key = kvp.querySelector('div:first-of-type');
+      var key = Polymer.dom(kvp.root).querySelector('div:first-of-type');
       assert.isTrue(key.classList.contains('label'));
     });
     test('key-value pair value text gets the correct classes', function() {
-      var val = kvp.querySelector('div:last-of-type');
+      var val = Polymer.dom(kvp.root).querySelector('div:last-of-type');
       assert.isTrue(val.classList.contains('beta'));
       assert.isTrue(val.classList.contains('kvp-margin--beta'));
     });
