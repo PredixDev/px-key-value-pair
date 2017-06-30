@@ -2,7 +2,7 @@
 
 ## Overview
 
-px-key-value-pair is a Predix UI component
+px-key-value-pair is a Predix UI component that allows you to prominently display information in a dashboard.
 
 ## Usage
 
@@ -31,7 +31,11 @@ Second, import the component to your application with the following tag in your 
 Finally, use the component in your application:
 
 ```
-Insert Your demo code here.
+<px-key-value-pair
+  key="Lorem Ipsum"
+  value="12345"
+  size="alpha">
+</px-key-value-pair>
 ```
 
 <br />
