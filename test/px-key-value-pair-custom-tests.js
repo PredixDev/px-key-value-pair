@@ -5,23 +5,19 @@ function runCustomTests() {
   // This is the placeholder suite to place custom tests in
   // Use testCase(options) for a more convenient setup of the test cases
   suite('Custom Automation Tests for px-key-value-pair', function() {
-    test('Check initial value of counter', function(done){
-      var counterEl = Polymer.dom(document).querySelector('px-key-value-pair'),
-          counterValueEl = Polymer.dom(counterEl.root).querySelector('span');
-      assert.equal(counterValueEl.textContent, '0');
-      done();
+    var kvp = document.querySelector('px-key-value-pair');
+
+    test('key-value pair element is created', function() {
+      assert.isTrue(kvp !== undefined);
     });
-
-    test('Clicking px-key-value-pair increments the counter', function(done){
-      var counterEl = Polymer.dom(document).querySelector('px-key-value-pair'),
-          counterValueEl = Polymer.dom(counterEl.root).querySelector('span');
-      assert.equal(counterValueEl.textContent, '0');
-
-      counterEl.click();
-      flush(function(){
-        assert.equal(counterValueEl.textContent, '1');
-      });
-      done();
+    test('key-value pair key gets the correct classes', function() {
+      var key = kvp.querySelector('div:first-of-type');
+      assert.isTrue(key.classList.contains('label'));
+    });
+    test('key-value pair value text gets the correct classes', function() {
+      var val = kvp.querySelector('div:last-of-type');
+      assert.isTrue(val.classList.contains('beta'));
+      assert.isTrue(val.classList.contains('kvp-margin--beta'));
     });
   });
 }

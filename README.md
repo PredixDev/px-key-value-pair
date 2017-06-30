@@ -1,8 +1,6 @@
-#px-key-value-pair
-
 ## Overview
 
-px-key-value-pair is a Predix UI component that allows you to prominently display information in a dashboard.
+The px-key-value-pair is a Predix UI component that allows you to prominently display information in a dashboard.
 
 ## Usage
 
