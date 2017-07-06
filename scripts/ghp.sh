@@ -42,19 +42,21 @@ rm -rf css
 rm -rf sass
 rm -rf scripts
 rm -rf test
-rm *.html
-rm *.json
-rm *.enc
-rm *.js
-rm *.lock
-rm *.ico
-rm *.md
+rm -f *.html
+rm -f *.json
+rm -f *.enc
+rm -f *.js
+rm -f *.png
+rm -f *.lock
+rm -f *.ico
+rm -f *.md
+rm -f *.pdf
 yes | rm .travis.yml
-rm .bowerrc
-rm .editorconfig
+rm -f .bowerrc
+rm -f .editorconfig
 rm -rf .github
-rm .gitignore
-rm .jshintrc
+rm -f .gitignore
+rm -f .jshintrc
 
 # force installation of bower packages at the root
 echo "{ \"directory\": \".\" }" > .bowerrc
@@ -90,7 +92,7 @@ bower install
 # ------------------------------------------------------------------------------
 
 # Go into the component folder we've just installed from bower
-#cd ${REPO_NAME}
+# cd ${REPO_NAME}
 
 # ------------------------------------------------------------------------------
 # SW-PRECACHE
@@ -104,7 +106,7 @@ bower install
 # ------------------------------------------------------------------------------
 
 # Remember to exit out of the component before we do any git stuff
-#cd ../
+# cd ../
 
 # Do the git stuff
 
