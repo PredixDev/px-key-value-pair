@@ -1,6 +1,8 @@
+# px-key-value-pair [![Build Status](https://travis-ci.org/PredixDev/px-key-value-pair.svg?branch=master)](https://travis-ci.org/PredixDev/px-key-value-pair)
+
 ## Overview
 
-The px-key-value-pair is a Predix UI component that allows you to prominently display information in a dashboard.
+Px-key-value-pair is a Predix UI component that allows you to prominently display information in a dashboard.
 
 ## Usage
 
