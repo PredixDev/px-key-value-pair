@@ -75,17 +75,17 @@ echo ${meta_temp/'COMPONENT_NAME'/$REPO_NAME} > index.html
 # BOWER
 # ------------------------------------------------------------------------------
 #
-# for some reason, bower isn't available here, so, install it globally, so it doesn't end up as another folder.
+#for some reason, bower isn't available here, so, install it globally, so it doesn't end up as another folder.
 npm install bower -g
 bower cache clean
 # Install the repo and the dark-theme.
 bower install ${REPO_NAME} px-dark-theme px-dark-demo-theme --force-latest
 
-# copy the bower file into our root
+#copy the bower file into our root
 yes | cp ${REPO_NAME}/bower.json bower.json
 
-# and run install
-bower install --force-latest
+#and run install
+bower install
 
 # ------------------------------------------------------------------------------
 # BUILD PROJECT
