@@ -2,7 +2,7 @@
 
 ## Overview
 
-Px-key-value-pair is a Predix UI component that allows you to prominently display information in a dashboard.
+`Px-key-value-pair` is a Predix UI component that allows you to prominently display information in a dashboard.
 
 ## Usage
 
@@ -16,13 +16,13 @@ Node, npm and bower are necessary to install the component and dependencies. web
 
 ## Getting Started
 
-First, install the component via bower on the command line.
+First, install the component via bower on the command line:
 
 ```
 bower install px-key-value-pair --save
 ```
 
-Second, import the component to your application with the following tag in your head.
+Second, import the component in your application with the following tag in your head:
 
 ```
 <link rel="import" href="/bower_components/px-key-value-pair/px-key-value-pair.html"/>
