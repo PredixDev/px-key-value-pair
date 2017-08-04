@@ -1,3 +1,8 @@
+v1.0.1
+==================
+* Run-time demo theming
+* Fix spacing for IE
+
 v1.0.0
 ==================
 * Bump version for release
