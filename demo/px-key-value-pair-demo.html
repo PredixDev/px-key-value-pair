@@ -38,6 +38,7 @@
         <px-key-value-pair
           key="{{props.key.value}}"
           value="{{props.value.value}}"
+          uom="{{props.uom.value}}"
           size="{{props.size.value}}">
         </px-key-value-pair>
       </px-demo-component>
@@ -100,6 +101,11 @@
       value: {
         type: String,
         defaultValue: '12345',
+        inputType: 'text'
+      },
+      uom: {
+        type: String,
+        defaultValue: 'units',
         inputType: 'text'
       },
       size: {

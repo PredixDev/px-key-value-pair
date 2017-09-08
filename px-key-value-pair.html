@@ -5,7 +5,7 @@
 
 ### Usage
 
-    <px-key-value-pair key="Outages" value="14" size="alpha"> </px-key-value-pair>
+    <px-key-value-pair key="Outages" value="14" uom="total" size="alpha"> </px-key-value-pair>
 
 @element px-key-value-pair
 @blurb The px-key-value-pair component allows you to prominently display information in a dashboard.
@@ -17,7 +17,9 @@
     <style include="px-key-value-pair-styles"></style>
 
     <div class="label">{{key}}</div>
-    <div class$="[[size]] kvp-margin--[[size]]">{{value}}</div>
+    <div class$="[[size]] kvp-value--[[size]]">{{value}}
+      <span class$="[[_getAdjustedSize(size)]] kvp-uom--[[size]]">{{uom}}</span>
+    </div>
   </template>
 </dom-module>
 
@@ -44,6 +46,14 @@
         type: String
       },
       /**
+      * The `unit of measure` for the value
+      *
+      * @property uom
+      */
+      uom: {
+        type: String
+      },
+      /**
       * The display size of the `value` in the key-value pair
       *
       * @property size
@@ -52,6 +62,12 @@
         type: String
       }
     },
+    _getAdjustedSize: function(size) {
+      return size === 'alpha' ? 'delta' :
+             size === 'beta' ? 'epsilon' :
+             size === 'gamma' ? 'value' :
+             size === 'delta' ? 'value' : 'zeta';
+    }
 
 
   });

@@ -1,3 +1,7 @@
+v1.1.0
+==================
+* add unit of measure (uom)
+
 v1.0.2
 ==================
 * Fix comment for analyzer
