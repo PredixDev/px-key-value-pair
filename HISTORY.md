@@ -1,3 +1,7 @@
+v1.1.1
+==================
+* update tests
+
 v1.1.0
 ==================
 * add unit of measure (uom)

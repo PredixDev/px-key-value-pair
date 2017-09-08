@@ -17,7 +17,12 @@ function runCustomTests() {
     test('key-value pair value text gets the correct classes', function() {
       var val = Polymer.dom(kvp.root).querySelector('div:last-of-type');
       assert.isTrue(val.classList.contains('beta'));
-      assert.isTrue(val.classList.contains('kvp-margin--beta'));
+      assert.isTrue(val.classList.contains('kvp-value--beta'));
+    });
+    test('key-value pair value text gets the correct classes', function() {
+      var uom = Polymer.dom(kvp.root).querySelector('span');
+      assert.isTrue(uom.classList.contains('beta'));
+      assert.isTrue(val.classList.contains('kvp-uom--beta'));
     });
   });
 }
