@@ -21,8 +21,7 @@ function runCustomTests() {
     });
     test('key-value pair value text gets the correct classes', function() {
       var uom = Polymer.dom(kvp.root).querySelector('span');
-      assert.isTrue(uom.classList.contains('beta'));
-      assert.isTrue(val.classList.contains('kvp-uom--beta'));
+      assert.isTrue(uom.classList.contains('kvp-uom--beta'));
     });
   });
 }
