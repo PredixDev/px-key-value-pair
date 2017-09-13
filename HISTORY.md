@@ -1,3 +1,7 @@
+v1.1.2
+==================
+* add dom-if around uom
+
 v1.1.1
 ==================
 * update tests
