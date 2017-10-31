@@ -1,3 +1,7 @@
+v1.1.3
+==================
+* add device flags
+
 v1.1.2
 ==================
 * add dom-if around uom
