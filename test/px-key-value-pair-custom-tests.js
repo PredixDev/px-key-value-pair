@@ -1,27 +1,26 @@
-// This is the wrapper for custom tests, called upon web components ready state
-function runCustomTests() {
-  // Place any setup steps like variable declaration and initialization here
-
-  // This is the placeholder suite to place custom tests in
-  // Use testCase(options) for a more convenient setup of the test cases
-  suite('Custom Automation Tests for px-key-value-pair', function() {
-    var kvp = document.querySelector('px-key-value-pair');
-
-    test('key-value pair element is created', function() {
-      assert.isTrue(kvp !== undefined);
-    });
-    test('key-value pair key gets the correct classes', function() {
-      var key = Polymer.dom(kvp.root).querySelector('div:first-of-type');
-      assert.isTrue(key.classList.contains('label'));
-    });
-    test('key-value pair value text gets the correct classes', function() {
-      var val = Polymer.dom(kvp.root).querySelector('div:last-of-type');
-      assert.isTrue(val.classList.contains('beta'));
-      assert.isTrue(val.classList.contains('kvp-value--beta'));
-    });
-    test('key-value pair value text gets the correct classes', function() {
-      var uom = Polymer.dom(kvp.root).querySelector('span');
-      assert.isTrue(uom.classList.contains('kvp-uom--beta'));
+suite('Custom Automation Tests for px-key-value-pair', function() {
+  let kvp;
+  setup((done)=> {
+    kvp = fixture('pxKeyValuePair');
+    flush(()=> {
+      done();
     });
   });
-}
+
+  test('key-value pair element is created', function() {
+    assert.isTrue(kvp !== undefined);
+  });
+  test('key-value pair key gets the correct classes', function() {
+    let key = Polymer.dom(kvp.root).querySelector('div:first-of-type');
+    assert.isTrue(key.classList.contains('label'));
+  });
+  test('key-value pair value text gets the correct classes', function() {
+    let val = Polymer.dom(kvp.root).querySelector('div:last-of-type');
+    assert.isTrue(val.classList.contains('beta'));
+    assert.isTrue(val.classList.contains('kvp-value--beta'));
+  });
+  test('key-value pair uom text gets the correct classes', function() {
+    let uom = Polymer.dom(kvp.root).querySelector('span');
+    assert.isTrue(uom.classList.contains('kvp-uom--beta'));
+  });
+});
