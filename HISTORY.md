@@ -1,3 +1,7 @@
+v1.2.1
+==================
+* fix tests?
+
 v1.2.0
 ==================
 * Polymer 1.x/2.x hybrid element support
