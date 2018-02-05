@@ -2,7 +2,7 @@
     "name": "px-key-value-pair",
     "author": "General Electric",
     "description": "A Px component that allows you to prominently display information in a dashboard.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "private": false,
     "extName" : null,
     "repository" :

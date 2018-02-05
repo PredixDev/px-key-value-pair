@@ -16,10 +16,11 @@
   <template>
     <style include="px-key-value-pair-styles"></style>
 
-    <div class="label">{{key}}</div>
-    <div class$="[[size]] kvp-value--[[size]]">{{value}}
-      <template is="dom-if" if="{{uom}}">
-        <span class$="[[_getAdjustedSize(size)]] kvp-uom--[[size]]">{{uom}}</span>
+    <div class="label">[[key]]</div>
+    <div class$="[[size]] kvp-value--[[size]]">
+      <span>[[value]]</span>
+      <template is="dom-if" if="[[uom]]">
+        <span class$="[[_getAdjustedSize(size)]] kvp-uom--[[size]]">[[uom]]</span>
       </template>
     </div>
   </template>
