@@ -20,7 +20,7 @@ suite('Custom Automation Tests for px-key-value-pair', function(done) {
     assert.isTrue(val.classList.contains('kvp-value--beta'));
   });
   test('key-value pair uom text gets the correct classes', function() {
-    let uom = Polymer.dom(kvp.root).querySelector('span');
+    let uom = Polymer.dom(kvp.root).querySelectorAll('span')[1];
     assert.isTrue(uom.classList.contains('kvp-uom--beta'));
   });
 });

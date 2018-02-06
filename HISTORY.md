@@ -1,3 +1,7 @@
+v1.2.4
+==================
+* update tests for 1.2.3
+
 v1.2.3
 ==================
 * fix spacing for predix-ui site
