@@ -1,3 +1,7 @@
+v1.2.5
+==================
+* fixing demo pages for IE11
+
 v1.2.4
 ==================
 * update tests for 1.2.3
