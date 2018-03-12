@@ -1,3 +1,7 @@
+v2.0.0
+==================
+* replace `key` with `label` so component will work in React
+
 v1.2.5
 ==================
 * fixing demo pages for IE11

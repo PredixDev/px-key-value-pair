@@ -11,13 +11,13 @@
 <link rel="import" href="../../px-demo/px-demo-component-snippet.html" />
 
 <!-- Imports for this component -->
- 
+
 <link rel="import" href="../px-key-value-pair.html" />
 
 <!-- Demo DOM module -->
 <dom-module id="px-key-value-pair-demo">
   <template>
- 
+
 
     <!-- Header -->
     <px-demo-header
@@ -37,7 +37,7 @@
       <!-- Component ---------------------------------------------------------->
       <px-demo-component slot="px-demo-component">
         <px-key-value-pair
-          key="{{props.key.value}}"
+          label="{{props.label.value}}"
           value="{{props.value.value}}"
           uom="{{props.uom.value}}"
           size="{{props.size.value}}">
@@ -95,7 +95,7 @@
      * A reference for `this.props`. Read the documentation there.
      */
     demoProps: {
-      key: {
+      label: {
         type: String,
         defaultValue: 'Lorem Ipsum',
         inputType: 'text'

@@ -5,7 +5,7 @@
 
 ### Usage
 
-    <px-key-value-pair key="Outages" value="14" uom="total" size="alpha"> </px-key-value-pair>
+    <px-key-value-pair label="Outages" value="14" uom="total" size="alpha"> </px-key-value-pair>
 
 @element px-key-value-pair
 @blurb The px-key-value-pair component allows you to prominently display information in a dashboard.
@@ -16,7 +16,7 @@
   <template>
     <style include="px-key-value-pair-styles"></style>
 
-    <div class="label">[[key]]</div>
+    <div class="label">[[label]]</div>
     <div class$="[[size]] kvp-value--[[size]]">
       <span>[[value]]</span>
       <template is="dom-if" if="[[uom]]">
@@ -35,9 +35,9 @@
       /**
       * The `key` of the key-value pair
       *
-      * @property key
+      * @property label
       */
-      key: {
+      label: {
         type: String
       },
       /**

@@ -11,8 +11,8 @@ suite('Custom Automation Tests for px-key-value-pair', function(done) {
     assert.isTrue(kvp !== undefined);
   });
   test('key-value pair key gets the correct classes', function() {
-    let key = Polymer.dom(kvp.root).querySelector('.label');
-    assert.isTrue(key.classList.contains('label'));
+    let label = Polymer.dom(kvp.root).querySelector('.label');
+    assert.isTrue(label.classList.contains('label'));
   });
   test('key-value pair value gets the correct classes', function() {
     let val = Polymer.dom(kvp.root).querySelector('.beta');
