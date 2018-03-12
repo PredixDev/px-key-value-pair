@@ -32,7 +32,7 @@ Finally, use the component in your application:
 
 ```
 <px-key-value-pair
-  key="Lorem Ipsum"
+  label="Lorem Ipsum"
   value="12345"
   size="alpha">
 </px-key-value-pair>
